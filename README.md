@@ -34,3 +34,8 @@ Os exercícios foram distribuídos entre os colaboradores da seguinte forma:
 ---
 
 
+
+[![Trello](    https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)](https://trello.com/invite/b/67cb64bf66003079e51ad863/ATTI46fab2ea9c580713321ec2e666cd495b8092B118/atividade-de-algoritmos-e-estrutura-de-dados)
+
+
+
