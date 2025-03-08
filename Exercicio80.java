@@ -21,7 +21,7 @@ public class Exercicio80 {
          * ---> length: comprimento" ou "tamanho"
          * i++: A cada iteração, a variável i é incrementada em 1.
          *
-         * Esse laço percorre todos os índices do vetor (de 0 a 6) e executa o código dentro dele
+         * Esse laço percorre todos os índices do vetor (de 0 a 6) e executa o código dentro dele.
          */
 
         // Mostra os valores gerados
