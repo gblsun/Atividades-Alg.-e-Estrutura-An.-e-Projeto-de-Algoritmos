@@ -1,4 +1,4 @@
-public class Exercicio79 {
+public class Exercicio79b {
     public static void main(String[] args) {
         // Criação de dois vetores com 10 posições
         int[] vetor1 = new int[10];

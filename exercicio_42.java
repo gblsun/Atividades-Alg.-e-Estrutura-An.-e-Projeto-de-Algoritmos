@@ -6,7 +6,7 @@ import java.util.Scanner;
 //Ex: Digite um valor: 35
 //Contagem: 1 2 3 4 5 6 7 ... 33 34 35 Acabou!
 
-
+public class exercicio_42{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("escreva um número inteiro e positivo qualquer");
@@ -24,4 +24,4 @@ import java.util.Scanner;
 
 
     }
-
+}
