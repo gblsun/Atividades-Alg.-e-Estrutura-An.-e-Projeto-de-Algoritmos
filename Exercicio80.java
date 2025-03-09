@@ -1,5 +1,4 @@
 /*
-Exercício 80 - Desenvolvido por Gabriel Muchon Pavanelli. Faculdade Impacta de Tecnologia
 
 80. Crie um programa que preencha automaticamente um vetor numérico com 7 números
 gerados aleatoriamente pelo computador e depois mostre os valores gerados na tela.
