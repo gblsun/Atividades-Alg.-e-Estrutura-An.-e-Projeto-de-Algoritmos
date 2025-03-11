@@ -4,6 +4,13 @@
 de um fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele
 já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule quantos
 dias de vida um fumante perderá e exiba o total em dias.
+
+1° Solicitei o número de cigarros fumados por dia  
+2° Solicitei o número de anos que a pessoa fumou  
+3° Calculei a quantidade total de minutos perdidos devido ao fumo  
+4° Convertei os minutos perdidos para dias  
+5° Exibi a quantidade de dias de vida perdidos  
+
 */
 package Lista;
 
