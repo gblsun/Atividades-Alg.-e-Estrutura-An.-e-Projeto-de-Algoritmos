@@ -14,7 +14,7 @@ Passos:
 import java.util.Arrays;
 import java.util.Random;
 
-public class Exercicio87 {
+public class Exercicio87Desafio {
     public static void main(String[] args) {
         int[] vetor = new int[20];
         Random gerador = new Random(); // Objeto da classe random

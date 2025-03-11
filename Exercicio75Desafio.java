@@ -1,4 +1,4 @@
-public class Exercicio75 {
+public class Exercicio75Desafio {
     public static void main(String[] args) {
         int n1 = 1, n2 = 1, n3;
 

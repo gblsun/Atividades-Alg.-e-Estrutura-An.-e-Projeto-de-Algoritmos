@@ -15,7 +15,7 @@ Fibonacci(9) vai gerar 1 >> 1 >> 2 >> 3 >> 5 >> 8 >> 13 >> 21 >> 34 >> FIM
 6- Exibi os primeiros n termos da sequência de Fibonacci.
 7- Exibi "FIM" após a sequência.
  */
-public class Exercicio98 {
+public class Exercicio98Desafios {
     public static void main(String[] args) {
         // Cria um scanner para leitura de dados do usuário
         Scanner sc = new Scanner(System.in);

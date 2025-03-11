@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class Exercicio60 {
+public class Exercicio60Desafio {
     public static void main(String[] args) {
         // Gera um número aleatório entre 1 e 10
         int numeroSorteado = (int) (Math.random() * 10) + 1;
