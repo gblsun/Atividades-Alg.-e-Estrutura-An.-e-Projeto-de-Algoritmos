@@ -1,3 +1,9 @@
+/*
+1° Declarei as variáveis para os primeiros termos da sequência
+2° Exibi os dois primeiros termos fixos
+3° Usei um loop para calcular e exibir os 8 termos seguintes da sequência
+4° Atualizei os valores dos termos anteriores a cada iteração
+ */
 public class Exercicio75Desafio {
     public static void main(String[] args) {
         int n1 = 1, n2 = 1, n3;

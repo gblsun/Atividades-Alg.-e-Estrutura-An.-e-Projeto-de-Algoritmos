@@ -1,3 +1,13 @@
+/*
+
+1° Adicionei a biblioteca Scanner
+2° Solicitei e li o primeiro termo da PA
+3° Solicitei e li a razão da PA
+4° Declarei variáveis para armazenar a soma e o valor atual da PA
+5° Usei um loop para exibir os 10 primeiros termos e calcular a soma
+6° Exibi a soma de todos os termos da PA
+7° Fechei o Scanner
+ */
 import java.util.Scanner;
 public class Exercicio74Desafio {
     public static void main(String[] args) {
