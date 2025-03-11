@@ -15,7 +15,7 @@ Nosso foco vai além da sintaxe: buscamos construir uma forma de pensar lógica 
 | Gabriel Muchon Pavanelli  | [gblsun](https://github.com/gblsun)          |
 | Gabriel Macedo            | [GabrielMacedo](https://github.com/GabrielMascavo75)         |
 | Guilherme Pinheiro Santos | [GuilhermePinheiroSantos](https://github.com/GuilhermePinheiroSantos) |
-| Richard                   | [Richard](#) _(COLOCAR O LINK)_               |
+| Richard                   | [Richard](https://github.com/RichardMendes49)               |
 
 ---
 
