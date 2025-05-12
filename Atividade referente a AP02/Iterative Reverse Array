@@ -1,0 +1,32 @@
+Função REVERTER_ARRAY(array)
+    início ← 0
+    fim ← comprimento(array) - 1
+
+    Enquanto início < fim faça
+        temp ← array[início]
+        array[início] ← array[fim]
+        array[fim] ← temp
+
+        início ← início + 1
+        fim ← fim - 1
+    FimEnquanto
+FimFunção
+
+Função IMPRIMIR_ARRAY(array)
+    Para cada elemento em array faça
+        Escreva elemento + " "
+    FimPara
+    Escreva nova linha
+FimFunção
+
+Função PRINCIPAL()
+    array ← {1, 2, 3, 4, 5}
+
+    Escreva "Array original:"
+    IMPRIMIR_ARRAY(array)
+
+    REVERTER_ARRAY(array)
+
+    Escreva "Array invertido:"
+    IMPRIMIR_ARRAY(array)
+FimFunção
