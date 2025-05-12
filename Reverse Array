@@ -1,0 +1,29 @@
+Início
+    array ← [1, 2, 3, 4, 5]
+    Escreva "Array original:"
+    imprimirArray(array)
+    inverterArray(array)
+    Escreva "Array decrescente:"
+    imprimirArray(array)
+Fim
+
+Procedimento inverterArray(arr)
+    esquerda ← 0
+    direita ← tamanho(arr) - 1
+
+    Enquanto esquerda < direita faça
+        temp ← arr[esquerda]
+        arr[esquerda] ← arr[direita]
+        arr[direita] ← temp
+
+        esquerda ← esquerda + 1
+        direita ← direita - 1
+    FimEnquanto
+FimProcedimento
+
+Procedimento imprimirArray(arr)
+    Para cada valor em arr faça
+        Escreva valor + " "
+    FimPara
+    Escreva nova linha
+FimProcedimento
