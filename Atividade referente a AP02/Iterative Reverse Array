@@ -30,3 +30,5 @@ Função PRINCIPAL()
     Escreva "Array invertido:"
     IMPRIMIR_ARRAY(array)
 FimFunção
+
+//Foi utilizado aulas passadas, aula criação e manipulação de array em java do CFB cursos e utilização da IA do chatgpt para instruir no concerto de erros 
