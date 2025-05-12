@@ -27,3 +27,5 @@ Procedimento imprimirArray(arr)
     FimPara
     Escreva nova linha
 FimProcedimento
+
+//Foi utilizado aulas passadas, aula criação e manipulação de array em java do CFB cursos e utilização da IA do chatgpt para instruir no concerto de erros 
