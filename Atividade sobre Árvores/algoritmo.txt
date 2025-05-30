@@ -1,0 +1,195 @@
+Classe No:
+    Método _init_(key, dir, esq):
+        item ← key
+        dir ← dir
+        esq ← esq
+
+Classe Tree:
+    Método _init_():
+        root ← None
+
+    Método inserir(v):
+        novo ← novo No com v
+        Se root é None:
+            root ← novo
+        Senão:
+            atual ← root
+            Enquanto Verdadeiro:
+                anterior ← atual
+                Se v ≤ atual.item:
+                    atual ← atual.esq
+                    Se atual é None:
+                        anterior.esq ← novo
+                        Retornar
+                Senão:
+                    atual ← atual.dir
+                    Se atual é None:
+                        anterior.dir ← novo
+                        Retornar
+
+    Método buscar(chave):
+        Se root é None:
+            Retornar None
+        atual ← root
+        Enquanto atual.item ≠ chave:
+            Se chave < atual.item:
+                atual ← atual.esq
+            Senão:
+                atual ← atual.dir
+            Se atual é None:
+                Retornar None
+        Retornar atual
+
+    Método nosucessor(apaga):
+        paidosucessor ← apaga
+        sucessor ← apaga
+        atual ← apaga.dir
+        Enquanto atual ≠ None:
+            paidosucessor ← sucessor
+            sucessor ← atual
+            atual ← atual.esq
+        Se sucessor ≠ apaga.dir:
+            paidosucessor.esq ← sucessor.dir
+            sucessor.dir ← apaga.dir
+        Retornar sucessor
+
+    Método remover(v):
+        Se root é None:
+            Retornar Falso
+        atual ← root
+        pai ← root
+        filho_esq ← Verdadeiro
+        Enquanto atual.item ≠ v:
+            pai ← atual
+            Se v < atual.item:
+                atual ← atual.esq
+                filho_esq ← Verdadeiro
+            Senão:
+                atual ← atual.dir
+                filho_esq ← Falso
+            Se atual é None:
+                Retornar Falso
+        Se atual.esq é None e atual.dir é None:
+            Se atual = root:
+                root ← None
+            Senão se filho_esq:
+                pai.esq ← None
+            Senão:
+                pai.dir ← None
+        Elif atual.dir é None:
+            Se atual = root:
+                root ← atual.esq
+            Senão se filho_esq:
+                pai.esq ← atual.esq
+            Senão:
+                pai.dir ← atual.esq
+        Elif atual.esq é None:
+            Se atual = root:
+                root ← atual.dir
+            Senão se filho_esq:
+                pai.esq ← atual.dir
+            Senão:
+                pai.dir ← atual.dir
+        Senão:
+            sucessor ← nosucessor(atual)
+            Se atual = root:
+                root ← sucessor
+            Senão se filho_esq:
+                pai.esq ← sucessor
+            Senão:
+                pai.dir ← sucessor
+            sucessor.esq ← atual.esq
+        Retornar Verdadeiro
+
+    Método inOrder(atual):
+        Se atual ≠ None:
+            inOrder(atual.esq)
+            Mostrar atual.item
+            inOrder(atual.dir)
+
+    Método preOrder(atual):
+        Se atual ≠ None:
+            Mostrar atual.item
+            preOrder(atual.esq)
+            preOrder(atual.dir)
+
+    Método posOrder(atual):
+        Se atual ≠ None:
+            posOrder(atual.esq)
+            posOrder(atual.dir)
+            Mostrar atual.item
+
+    Método altura(atual):
+        Se atual é None ou (atual.esq é None e atual.dir é None):
+            Retornar 0
+        Senão se altura(atual.esq) > altura(atual.dir):
+            Retornar 1 + altura(atual.esq)
+        Senão:
+            Retornar 1 + altura(atual.dir)
+
+    Método folhas(atual):
+        Se atual é None:
+            Retornar 0
+        Se atual.esq é None e atual.dir é None:
+            Retornar 1
+        Retornar folhas(atual.esq) + folhas(atual.dir)
+
+    Método contarNos(atual):
+        Se atual é None:
+            Retornar 0
+        Retornar 1 + contarNos(atual.esq) + contarNos(atual.dir)
+
+    Método minn():
+        atual ← root
+        anterior ← None
+        Enquanto atual ≠ None:
+            anterior ← atual
+            atual ← atual.esq
+        Retornar anterior
+
+    Método maxx():
+        atual ← root
+        anterior ← None
+        Enquanto atual ≠ None:
+            anterior ← atual
+            atual ← atual.dir
+        Retornar anterior
+
+    Método caminhar():
+        Mostrar " Exibindo em ordem: "
+        inOrder(root)
+        Mostrar " Exibindo em pos-ordem: "
+        posOrder(root)
+        Mostrar " Exibindo em pre-ordem: "
+        preOrder(root)
+        Mostrar " Altura da arvore: ", altura(root)
+        Mostrar " Quantidade de folhas: ", folhas(root)
+        Mostrar " Quantidade de Nós: ", contarNos(root)
+        Se root ≠ None:
+            Mostrar " Valor minimo: ", minn().item
+            Mostrar " Valor maximo: ", maxx().item
+
+Início do Programa Principal:
+    arv ← nova Tree
+    Mostrar "Programa Arvore Binaria"
+    opcao ← 0
+    Enquanto opcao ≠ 5:
+        Mostrar opções do menu
+        opcao ← entrada do usuário
+        Se opcao = 1:
+            x ← entrada do usuário
+            arv.inserir(x)
+        Elif opcao = 2:
+            x ← entrada do usuário
+            Se arv.remover(x) = Falso:
+                Mostrar "Valor nao encontrado!"
+        Elif opcao = 3:
+            x ← entrada do usuário
+            Se arv.buscar(x) ≠ None:
+                Mostrar "Valor Encontrado"
+            Senão:
+                Mostrar "Valor nao encontrado!"
+        Elif opcao = 4:
+            arv.caminhar()
+        Elif opcao = 5:
+            Encerrar programa
